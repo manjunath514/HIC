@@ -19,12 +19,8 @@
         font-size: 40px;
         font-weight: bold;
     }
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Mega Menu</title>
-  <style>
+  
+
     /* Reset and base styles */
     * {
       margin: 0;
@@ -42,7 +38,7 @@
       background-color: #333 ;
       display: flex;
       justify-content: center;
-      padding: 0;
+      padding: 10px;
     }
 
     .navbar ul {
@@ -119,7 +115,66 @@
         display: flex;
         justify-content: center;      
     }
+
+    /* Hamburger icon */
+  .menu-toggle {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 38px;
+    cursor: pointer;
+    
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navbar ul {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+    }
+
+    .navbar ul.show {
+      display: flex;
+    }
+
+    .navbar li {
+      width: 100%;
+    }
+
+    .navbar a {
+      padding: 15px;
+      border-top: 1px solid #444;
+    }
+
+    .mega-menu {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+      padding: 10px;
+      flex-direction: column;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+  }
 </style>
+<script>
+  function toggleMenu() {
+    const navList = document.querySelector('.navbar ul');
+    navList.classList.toggle('show');
+  }
+</script>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰ </div>
+
 <div class="top-bar navbar">
     
 </div>
