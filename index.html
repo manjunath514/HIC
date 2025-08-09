@@ -1,0 +1,226 @@
+<style>
+    .gradient-text-container {
+        background: linear-gradient(to right, orange, white, green);
+        color: #000080;
+        padding: 30px;
+        text-align: center;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+    }
+
+    .gradient-text-container .line {
+        margin: 10px 0;
+        font-weight: 600;
+    }
+
+    .gradient-text-container .indian {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mega Menu</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      background-color: #333 ;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar a {
+      display: block;
+      padding: 5px 20px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #444;
+    }
+
+    /* Mega menu container */
+    .mega-menu {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100vw;
+      background-color: #fff;
+      display: none;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .navbar li:hover .mega-menu {
+      display: flex;
+    }
+
+    .mega-column {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .mega-menu h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .mega-menu a {
+      color: #555;
+      padding: 5px 0;
+      display: block;
+      text-decoration: none;
+    }
+
+    .mega-menu a:hover {
+      color: #000;
+    }
+
+    .mega-menu {
+      display: none;
+      flex-wrap: wrap;
+    }
+
+    .navbar li:hover .mega-menu {
+      display: flex;
+    }
+    .top-bar{
+        padding:20px;
+        background-color: #333 ;
+        display: flex;
+        justify-content: center;      
+    }
+</style>
+<div class="top-bar navbar">
+    
+</div>
+<div class="gradient-text-container">
+  <div class="line">Harrisburg</div>
+  <div class="line indian">Indian</div>
+  <div class="line">Community</div>
+</div>
+<div>
+    <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Kids Zone</a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3>Kids Zone</h3>
+            <a href="#">Activities</a>
+            <a href="#">Games</a>
+            <a href="#">Parenting Tips</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Learning Hub</a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3>Learning Hub</h3>
+            <a href="#">Tutorials</a>
+            <a href="#">Courses</a>
+            <a href="#">Resources</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Grocery</a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3>Grocery</h3>
+            <a href="#">Fresh Produce</a>
+            <a href="#">Essentials</a>
+            <a href="#">Local Stores</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Food & Dining</a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3>Food & Dining</h3>
+            <a href="#">Restaurants</a>
+            <a href="#">Recipes</a>
+            <a href="#">Reviews</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Health</a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3>Health</h3>
+            
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Events</a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3>Events</h3>
+           
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Entertainment</a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3>Entertainment</h3>
+            
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Visiting Places</a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3>Visiting Places</h3>
+            
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Real Estate</a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h3>Real Estate</h3>
+            
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
